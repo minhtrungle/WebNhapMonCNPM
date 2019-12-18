@@ -26,4 +26,4 @@ Chức năng của WEBSITE
 2. Xem sản phẩm, Các khuyến mãi.
 3. Thêm sản phẩm vào giỏ hàng.
 4. Mua sản phẩm.
-5. Liên hệ với admin.
+5. Liên hệ với cửa hàng.
