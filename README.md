@@ -6,7 +6,7 @@ Prerequisites
 To run this WEBSITE:
 
 Java JDK is required. We used Java JDK 1.8 when develop this program.
-App was built based on Netbean 8.1 therefore I recommend using this to help this website run most stable.
+ App was built based on Netbean 8.1 therefore I recommend using this to help this website run most stable.
 WEBSITE uses jdbc to connect with SQL Server Database.
 WEBSITE uses jstl 1.2.1 to handle view on jsp page.
 WEBSITE chạy trên Glassfish Server 4.1
