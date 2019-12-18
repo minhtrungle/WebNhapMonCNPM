@@ -6,18 +6,18 @@ Prerequisites
 To run this WEBSITE:
 
 Java JDK is required. We used Java JDK 1.8 when develop this program.
- App was built based on Netbean 8.1 therefore I recommend using this to help this website run most stable.
+App was built based on Netbean 8.1 therefore I recommend using this to help this website run most stable.
 WEBSITE uses jdbc to connect with SQL Server Database.
 WEBSITE uses jstl 1.2.1 to handle view on jsp page.
 WEBSITE chạy trên Glassfish Server 4.1
 Microsoft SQL Server đã được chọn để xây dựng cơ sở dữ liệu trên nó:
+
 Lưu ý: Có thể có nhiều điều kiện tiên quyết hơn nếu bạn muốn xây dựng trang web này từ nguồn.
 
 Xây dựng WEBSITE ( Lưu ý: Sử dụng Netbean để xây dựng và chạy dự án )
-
-Bước 1: Chạy emarket4.sql để khởi tạo cơ sở dữ liệu.
-Bước 2: Mở dự án với Netbean 8.1. 
-Bước 3: Xây dựng và chạy dự án. 
+Bước 1: Chạy emarket4.sql để khởi tạo cơ sở dữ liệu. 
+Bước 2: Mở dự án với Netbean 8.1.
+Bước 3: Xây dựng và chạy dự án.
 Bước 4: Thưởng thức trang web hiện đại, đẹp và đa chức năng của chúng tôi.
 
 Chức năng của WEBSITE
