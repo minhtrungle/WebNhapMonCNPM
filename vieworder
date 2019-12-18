@@ -1,0 +1,58 @@
+<%@page import="DAO.OrderProductDAO"%>
+<%@page import="model.OrderedProduct"%>
+<%@page import="model.CustomerOrder"%>
+<%@page import="java.util.ArrayList"%>
+<%@page contentType="text/html; charset=UTF-8;" pageEncoding="UTF-8"%>
+<%@ page autoFlush="true" buffer="1094kb"%>
+
+<% ArrayList<CustomerOrder> listOrder = (ArrayList<CustomerOrder>) session.getAttribute("listOrderCus");
+    if(listOrder == null){
+%>
+        <jsp:forward page="/viewOrderServlet"></jsp:forward>
+<%
+    }
+%>
+
+<div class="breadcrumb parallax-container">
+  <div class="parallax" ></div>
+  <h1 class="text-center" style="font-family: Montserrat">Đơn hàng của bạn</h1>
+</div>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+         <table class="table table-bordered" style="font-size: 18px;">
+        <thead>
+            <tr>
+                <th>Mã đơn hàng</th>
+                <th>Ngày mua</th>
+                <th>Sản phẩm</th>
+                <th>Tổng tiền</th>
+                <th>Trạng thái đơn hàng</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (int i = 0; i < listOrder.size(); i++) {
+                    CustomerOrder cusOrder = listOrder.get(i);
+            %>
+            <tr>
+                <td><a href="ViewOrderProductServlet?orderId=<%=cusOrder.getOrder_id()%>"><%= cusOrder.getOrder_id()%></a></td>
+                <td><%= cusOrder.getDate_created()%></td>
+                <td><a href="ViewOrderProductServlet?orderId=<%=cusOrder.getOrder_id()%>">Chi tiết sản phẩm</a></td>
+                <td><%= currencyVN.format(cusOrder.getAmount())%></td>
+                <% if(cusOrder.isChecked()){ %>
+                <th>Đã giao</th>
+                <%
+                    }else{
+                %>
+                <td>Đang giao</td>
+                <%
+                        }
+                %>
+            </tr>
+            <%
+                }
+            %>
+        </tbody>
+    </table>
+    </div>
+   
+</div>
