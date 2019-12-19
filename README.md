@@ -1,4 +1,4 @@
-# -Trang Wep TMDT-
+# -WEPSITE-
 Introduction
 This website was built as an assignment of Introduction to Software Engineering course. We spent months studying jstl, SessionBean, Servlet, Session together under the guidance of Dr. Nguyen Nhat Hai, lectures of School of Information and Technology, Hanoi University of Science and Technology, Vietnam. We are very thankful for the knowledge which was taught by him to have this website.
 
